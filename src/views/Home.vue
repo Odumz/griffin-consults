@@ -2,8 +2,8 @@
   <div class="home">
     <!-- <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
-    <hero class="mb-10 hidden" />
-    <features class="mb-10 hidden" />
+    <hero class="mb-10 " />
+    <features class="mb-10 " />
     <cta />
   </div>
 </template>

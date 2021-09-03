@@ -3,8 +3,8 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div> -->
-  <header-nav />
-  <router-view/>
+  <header-nav class="z-index" />
+  <router-view class=""/>
 </template>
 
 <script>
@@ -39,5 +39,9 @@ export default defineComponent({
       color: #42b983;
     }
   }
+}
+
+.z-index {
+  z-index: 1000;
 }
 </style>
