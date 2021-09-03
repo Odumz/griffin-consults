@@ -1,10 +1,23 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div> -->
+  <header-nav />
   <router-view/>
 </template>
+
+<script>
+import { defineComponent } from '@vue/runtime-core'
+import headerNav from './components/header.vue'
+
+export default defineComponent({
+  name: 'App',
+  components: {
+    headerNav
+  }
+})
+</script>
 
 <style lang="scss">
 #app {
