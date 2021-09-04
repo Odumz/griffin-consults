@@ -180,7 +180,7 @@ const solutions = [
   {
     name: 'Analytics',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    href: '/about',
     icon: 'heroicons-outline:chart-bar'
   },
   {
