@@ -38,7 +38,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+                  <div class="px-5 py-5 bg-gray-50 space-y-6 justify-center sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                     <div v-for="item in callsToAction" :key="item.name" class="flow-root">
                       <a :href="item.href" class="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">
                         <Icon :icon="item.icon" class="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
@@ -69,7 +69,7 @@
                 <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                   <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <a v-for="item in resources" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                      <Icon :icon="item.icon" class="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                      <Icon :icon="item.icon" class="flex-shrink-0 h-6 w-6 text-skin-cerebro-purple" aria-hidden="true" />
                       <div class="ml-4">
                         <p class="text-base flex font-medium text-gray-900">
                           {{ item.name }}
@@ -81,7 +81,7 @@
                     </a>
                   </div>
                   <div class="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
-                    <div>
+                    <div class="text-left">
                       <h3 class="text-sm tracking-wide font-medium text-gray-500 uppercase">
                         Recent Posts
                       </h3>
@@ -93,7 +93,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="mt-5 text-sm">
+                    <div class="mt-5 text-right text-sm">
                       <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"> View all posts <span aria-hidden="true">&rarr;</span></a>
                     </div>
                   </div>
