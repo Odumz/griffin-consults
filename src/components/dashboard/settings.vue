@@ -65,11 +65,8 @@
                       <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
                   </span>
-                  <button type="button" class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Change
-                  </button>
-                  <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
-                    <span class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Upload a file</span>
+                  <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500">
+                    <span class="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50">Upload a file</span>
                     <input id="file-upload" name="file-upload" type="file" class="sr-only" />
                   </label>
                 </div>
@@ -132,17 +129,17 @@
               <div class="grid grid-cols-6 gap-6">
                 <div class="col-span-6 sm:col-span-3">
                   <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 border block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
                   <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 border block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div class="col-span-6 sm:col-span-4">
                   <label for="email-address" class="block text-sm font-medium text-gray-700">Email address</label>
-                  <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="email-address" id="email-address" autocomplete="email" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 border block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
@@ -156,22 +153,22 @@
 
                 <div class="col-span-6">
                   <label for="street-address" class="block text-sm font-medium text-gray-700">Street address</label>
-                  <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 border rounded-md" />
                 </div>
 
                 <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                   <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                  <input type="text" name="city" id="city" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="city" id="city" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 border rounded-md" />
                 </div>
 
                 <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                   <label for="state" class="block text-sm font-medium text-gray-700">State / Province</label>
-                  <input type="text" name="state" id="state" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="state" id="state" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 border rounded-md" />
                 </div>
 
                 <div class="col-span-6 sm:col-span-3 lg:col-span-2">
                   <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP / Postal</label>
-                  <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" />
+                  <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="mt-1 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 border rounded-md" />
                 </div>
               </div>
             </div>

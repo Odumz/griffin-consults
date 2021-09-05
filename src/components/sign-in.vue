@@ -18,11 +18,11 @@
   <div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-md w-full space-y-8">
       <div>
-        <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow" />
-        <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+        <img class="mx-auto h-12 w-auto" src="../assets/logo.png" alt="Workflow" />
+        <h2 class="mt-6 md:text-center text-left text-3xl font-extrabold text-gray-900">
           Sign in to your account
         </h2>
-        <p class="mt-2 text-center text-sm text-gray-600">
+        <p class="mt-2 text-left md:text-center text-sm text-gray-600">
           Or
           {{ ' ' }}
           <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
@@ -30,7 +30,27 @@
           </a>
         </p>
       </div>
-      <form class="mt-8 space-y-6" action="#" method="POST">
+      <div>
+        <p class="flex md:justify-center justify-start pb-2">Sign in with</p>
+        <div class="flex justify-between">
+          <div class="rounded-md border border-gray-300 px-10 md:px-14 py-5">
+            <Icon icon="akar-icons:facebook-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
+            <!-- <Icon icon="whh:paperclipvertical" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" /> -->
+          </div>
+          <div class="rounded-md border border-gray-300 px-10 md:px-14 py-5">
+            <Icon icon="akar-icons:twitter-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
+          </div>
+          <div class="rounded-md border border-gray-300 px-10 md:px-14 py-5">
+            <Icon icon="akar-icons:google-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
+          </div>
+        </div>
+        <div class="flex justify-center items-center space-x-2 mt-5">
+          <hr class="border-indigo-700 w-32">
+          <p class="text-sm">Or continue with</p>
+          <hr class="border-indigo-700 w-32">
+        </div>
+      </div>
+      <form class="space-y-6" action="#" method="POST">
         <input type="hidden" name="remember" value="true" />
         <div class="rounded-md shadow-sm -space-y-px">
           <div>
@@ -65,6 +85,13 @@
             </span>
             Sign in
           </button>
+          <p class="mt-2 text-left md:text-center text-sm text-gray-600">
+          Or
+          {{ ' ' }}
+          <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+            create a new account
+          </a>
+        </p>
         </div>
       </form>
     </div>
@@ -72,7 +99,7 @@
 </template>
 
 <script>
-import { Icon } from '@heroicons/vue/solid'
+import { Icon } from '@iconify/vue'
 import { defineComponent } from '@vue/runtime-core'
 
 export default defineComponent({

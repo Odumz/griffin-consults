@@ -7,6 +7,8 @@
   <settings class="mb-10" />
   <modal class="mb-10" />
   <pagination class="mb-10" />
+  <sign-in class="mb-10" />
+  <banner />
 </template>
 
 <script lang="ts">
@@ -16,6 +18,8 @@ import settings from '@/components/dashboard/settings.vue'
 import navbar from '@/components/dashboard/navbar.vue'
 import pagination from '@/components/pagination.vue'
 import modal from '@/components/modal.vue'
+import signIn from '@/components/sign-in.vue'
+import banner from '@/components/banner.vue'
 
 export default defineComponent({
   name: 'About',
@@ -24,7 +28,9 @@ export default defineComponent({
     settings,
     navbar,
     pagination,
-    modal
+    modal,
+    signIn,
+    banner
   }
 })
 </script>
