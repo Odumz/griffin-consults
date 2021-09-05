@@ -33,21 +33,21 @@
       <div>
         <p class="flex md:justify-center justify-start pb-2">Sign in with</p>
         <div class="flex justify-between">
-          <div class="rounded-md border border-gray-300 px-10 md:px-14 py-5">
+          <div class="rounded-md border border-gray-300 px-12 md:px-14 py-5">
             <Icon icon="akar-icons:facebook-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
             <!-- <Icon icon="whh:paperclipvertical" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" /> -->
           </div>
-          <div class="rounded-md border border-gray-300 px-10 md:px-14 py-5">
+          <div class="rounded-md border border-gray-300 px-12 md:px-14 py-5">
             <Icon icon="akar-icons:twitter-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           </div>
-          <div class="rounded-md border border-gray-300 px-10 md:px-14 py-5">
+          <div class="rounded-md border border-gray-300 px-12 md:px-14 py-5">
             <Icon icon="akar-icons:google-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
           </div>
         </div>
         <div class="flex justify-center items-center space-x-2 mt-5">
-          <hr class="border-indigo-700 w-32">
+          <hr class="border-gray-300 w-32">
           <p class="text-sm">Or continue with</p>
-          <hr class="border-indigo-700 w-32">
+          <hr class="border-gray-300 w-32">
         </div>
       </div>
       <form class="space-y-6" action="#" method="POST">
