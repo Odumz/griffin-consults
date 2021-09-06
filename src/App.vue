@@ -5,16 +5,19 @@
   </div> -->
   <header-nav class="z-index" />
   <router-view class=""/>
+  <footer-nav />
 </template>
 
 <script>
 import { defineComponent } from '@vue/runtime-core'
 import headerNav from './components/header.vue'
+import footerNav from './components/footer.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    headerNav
+    headerNav,
+    footerNav
   }
 })
 </script>
