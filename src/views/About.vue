@@ -8,7 +8,9 @@
   <modal class="mb-10" />
   <pagination class="mb-10" />
   <sign-in class="mb-10" />
+  <pricing />
   <banner />
+  <subscribe />
 </template>
 
 <script lang="ts">
@@ -20,6 +22,8 @@ import pagination from '@/components/pagination.vue'
 import modal from '@/components/modal.vue'
 import signIn from '@/components/sign-in.vue'
 import banner from '@/components/banner.vue'
+import pricing from '@/components/pricing.vue'
+import subscribe from '@/components/subscribe.vue'
 
 export default defineComponent({
   name: 'About',
@@ -30,7 +34,9 @@ export default defineComponent({
     pagination,
     modal,
     signIn,
-    banner
+    banner,
+    pricing,
+    subscribe
   }
 })
 </script>

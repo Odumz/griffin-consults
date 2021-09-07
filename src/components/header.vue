@@ -51,7 +51,7 @@
             </transition>
           </Popover>
 
-          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          <a href="/pricing" class="text-base font-medium text-gray-500 hover:text-gray-900">
             Pricing
           </a>
           <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
@@ -141,7 +141,7 @@
           </div>
           <div class="py-6 px-5 space-y-6">
             <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-              <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
+              <a href="/pricing" class="text-base font-medium text-gray-900 hover:text-gray-700">
                 Pricing
               </a>
 

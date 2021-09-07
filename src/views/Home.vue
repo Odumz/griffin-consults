@@ -5,6 +5,7 @@
     <hero class="mb-10 " />
     <features class="mb-10 " />
     <cta />
+    <subscribe class="md:py-14 py-7" />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import { defineComponent } from 'vue'
 import Hero from '@/components/hero.vue'
 import Features from '@/components/features.vue'
 import cta from '@/components/cta.vue'
+import subscribe from '@/components/subscribe.vue'
 
 export default defineComponent({
   name: 'Home',
@@ -21,7 +23,8 @@ export default defineComponent({
     // HelloWorld,
     Hero,
     Features,
-    cta
+    cta,
+    subscribe
   }
 })
 </script>
