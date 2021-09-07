@@ -9,6 +9,7 @@
   <pagination class="mb-10" />
   <sign-in class="mb-10" />
   <pricing />
+  <register />
   <banner />
   <subscribe />
 </template>
@@ -24,6 +25,7 @@ import signIn from '@/components/sign-in.vue'
 import banner from '@/components/banner.vue'
 import pricing from '@/components/pricing.vue'
 import subscribe from '@/components/subscribe.vue'
+import register from '@/components/register.vue'
 
 export default defineComponent({
   name: 'About',
@@ -36,7 +38,8 @@ export default defineComponent({
     signIn,
     banner,
     pricing,
-    subscribe
+    subscribe,
+    register
   }
 })
 </script>
