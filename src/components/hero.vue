@@ -1,6 +1,5 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="relative bg-white overflow-hidden">
+  <div class="relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
         <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
@@ -58,15 +57,15 @@
 
         <main class="reveal mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
           <div class="sm:text-center lg:text-left reveal">
-            <h1 class="reveal fromLeft text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span class="block xl:inline">Data to enrich your</span>
+            <h1 class="reveal fromLeft text-4xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl">
+              <span class="block xl:inline">A communication tool built for</span>
               {{ ' ' }}
-              <span class="block text-indigo-600 xl:inline">online business</span>
+              <span class="block text-indigo-600 xl:inline">you to connect anywhere, anytime</span>
             </h1>
-            <p ref="text" class="reveal mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+            <p class="reveal mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              Abby combines instant messaging, calling and video conferencing into a single, integrated app – and enables exciting new ways of working Your chat history and meeting notes are always there, so it’s easier to work together.
             </p>
-            <div ref="buttons" class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
                 <a href="/register" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                   Get started
@@ -140,7 +139,7 @@ export default defineComponent({
         y,
         autoAlpha: 0
       }, {
-        duration: 3.25,
+        duration: 2.75,
         x: 0,
         y: 0,
         autoAlpha: 1,
@@ -149,16 +148,13 @@ export default defineComponent({
       })
     }
 
-    const hide = (elem: string): void => {
+    const hide = (elem: any): void => {
       gsap.set(elem, { autoAlpha: 0 })
     }
 
     const animate = (): void => {
-      gsap.utils.toArray('reveal').forEach((elem: any) => {
+      gsap.utils.toArray('.reveal').forEach((elem: any) => {
         hide(elem)
-
-        // const header = refs.header
-        // const text = this.$refs.firstText
 
         ScrollTrigger.create({
           trigger: elem,
