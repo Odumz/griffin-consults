@@ -196,16 +196,10 @@ const resources = [
     icon: 'gg:support'
   },
   {
-    name: 'Blog',
+    name: 'FAQ',
     description: 'Learn how to maximize our platform to get the most out of it.',
     href: '#',
     icon: 'heroicons-outline:bookmark-alt'
-  },
-  {
-    name: 'FAQ',
-    description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
-    icon: 'gg:calendar-two'
   }
 ]
 const recentPosts = [

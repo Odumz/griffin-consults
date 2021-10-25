@@ -26,7 +26,7 @@
           Or
           {{ ' ' }}
           <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-            start your 14-day free trial
+            see a fascinating demo
           </a>
         </p>
       </div>
@@ -34,14 +34,14 @@
         <p class="flex md:justify-center justify-start pb-2">Sign in with</p>
         <div class="flex justify-between">
           <div class="rounded-md border border-gray-300 px-12 md:px-14 py-3">
-            <Icon icon="akar-icons:facebook-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
+            <Icon icon="akar-icons:facebook-fill" class="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-blue-800" aria-hidden="true" />
             <!-- <Icon icon="whh:paperclipvertical" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" /> -->
           </div>
           <div class="rounded-md border border-gray-300 px-12 md:px-14 py-3">
-            <Icon icon="akar-icons:twitter-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
+            <Icon icon="akar-icons:twitter-fill" class="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-blue-400" aria-hidden="true" />
           </div>
           <div class="rounded-md border border-gray-300 px-12 md:px-14 py-3">
-            <Icon icon="akar-icons:google-fill" class="flex-shrink-0 h-5 w-5 text-gray-400" aria-hidden="true" />
+            <Icon icon="akar-icons:google-fill" class="flex-shrink-0 h-5 w-5 text-gray-400 hover:text-red-600" aria-hidden="true" />
           </div>
         </div>
         <div class="flex justify-center items-center space-x-2 mt-5">

@@ -57,7 +57,7 @@ export default defineComponent({
     Icon
   },
   setup () {
-    const open = ref(false)
+    const open = ref(true)
 
     return {
       open
