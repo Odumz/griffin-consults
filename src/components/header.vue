@@ -15,6 +15,10 @@
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
+          <a href="/pricing" class="text-base font-medium text-gray-500 hover:text-gray-900">
+            Pricing
+          </a>
+
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-500', 'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500']">
               <span>Solutions</span>
@@ -50,16 +54,9 @@
             </transition>
           </Popover>
 
-          <a href="/pricing" class="text-base font-medium text-gray-500 hover:text-gray-900">
-            Pricing
-          </a>
-          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-            Docs
-          </a>
-
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[open ? 'text-gray-900' : 'text-gray-500', 'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500']">
-              <span>More</span>
+              <span>Resources</span>
               <Icon icon="akar-icons:chevron-down" :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']" aria-hidden="true" />
             </PopoverButton>
 
@@ -143,10 +140,6 @@
               <a href="/pricing" class="text-base font-medium text-gray-900 hover:text-gray-700">
                 Pricing
               </a>
-
-              <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-                Docs
-              </a>
               <a v-for="item in resources" :key="item.name" :href="item.href" class="text-base font-medium text-gray-900 hover:text-gray-700">
                 {{ item.name }}
               </a>
@@ -177,34 +170,10 @@ import { Icon } from '@iconify/vue'
 
 const solutions = [
   {
-    name: 'Analytics',
+    name: 'Clicka',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '/about',
+    href: '/about-clicka',
     icon: 'heroicons-outline:chart-bar'
-  },
-  {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: 'heroicons-outline:cursor-click'
-  },
-  {
-    name: 'Security',
-    description: "Your customers' data will be safe and secure.",
-    href: '#',
-    icon: 'fluent:shield-task-24-regular'
-  },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: 'fluent:grid-24-regular'
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: 'heroicons-outline:refresh'
   }
 ]
 const callsToAction = [
@@ -227,22 +196,16 @@ const resources = [
     icon: 'gg:support'
   },
   {
-    name: 'Guides',
+    name: 'Blog',
     description: 'Learn how to maximize our platform to get the most out of it.',
     href: '#',
     icon: 'heroicons-outline:bookmark-alt'
   },
   {
-    name: 'Events',
+    name: 'FAQ',
     description: 'See what meet-ups and other events we might be planning near you.',
     href: '#',
     icon: 'gg:calendar-two'
-  },
-  {
-    name: 'Security',
-    description: 'Understand how we take your privacy seriously.',
-    href: '#',
-    icon: 'fluent:shield-task-24-regular'
   }
 ]
 const recentPosts = [

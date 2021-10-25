@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <div class="home overflow-hidden">
     <!-- <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
     <hero class="mb-10 " />
-    <features class="mb-10 " />
-    <cta />
-    <subscribe class="md:py-14 py-7" />
+    <features class="mb-10 reveal fromTop " />
+    <cta class="reveal fromLeft" />
+    <subscribe class="md:py-14 py-7 reveal fromRight" />
   </div>
 </template>
 

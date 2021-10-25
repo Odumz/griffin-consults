@@ -3,7 +3,7 @@
   <div class="about mb-10">
     <h1>This is an about page</h1>
   </div>
-  <conference-info mb-10 />
+  <conference-info class="mb-10" />
   <settings class="mb-10" />
   <modal class="mb-10" />
   <pagination class="mb-10" />

@@ -63,7 +63,7 @@
               <span class="block text-indigo-600 xl:inline">you to connect anywhere, anytime</span>
             </h1>
             <p class="reveal mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Abby combines instant messaging, calling and video conferencing into a single, integrated app – and enables exciting new ways of working Your chat history and meeting notes are always there, so it’s easier to work together.
+              Clicka combines instant messaging, calling and video conferencing into a single, integrated app – and enables exciting new ways of working Your chat history and meeting notes are always there, so it’s easier to work together.
             </p>
             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div class="rounded-md shadow">
@@ -131,6 +131,12 @@ export default defineComponent({
       } else if (elem.classList.contains('fromRight')) {
         x = 100
         y = 0
+      } else if (elem.classList.contains('fromTop')) {
+        x = 0
+        y = -150
+      } else if (elem.classList.contains('fromBottom')) {
+        x = 0
+        y = 150
       }
       elem.style.transform = `translate(${x}px, ${y}px)`
       elem.style.opacity = '0'
