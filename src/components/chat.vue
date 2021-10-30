@@ -1,11 +1,11 @@
 <template>
   <div class="h-screen">
     <h1 class="font-thin my-3 font-mono text-5xl">Chat App</h1>
-    <div v-if="message" class="border rounded m-2 p-5 h-1/2">
-      <p>
+    <div v-if="messages" class="border rounded m-2 p-5 h-1/2 shadow-md overflow-y-scroll">
+      <!-- <p>
         {{ message }}<span v-if="username"> - {{ username }}</span>
-      </p>
-      <div class="">
+      </p> -->
+      <div v-if="joined" class="">
         <div v-for="message in messages" :key="message.id">
           {{ message.text }}
           <span>: {{ message.sender }}</span>
@@ -17,40 +17,40 @@
       <div v-if="joined" class="flex">
         <input
           type="text"
-          class="border rounded p-3 w-4/5 mx-2"
-          v-model="message"
-          @keyup.enter="sendMessage"
+          class="border rounded p-3 w-6/7 mx-2"
+          v-model="message.text"
+          placeholder="type here..."
         />
         <button
           @click.prevent="sendMessage"
-          class="border rounded-full p-3 w-1/5 mx-2 bg-indigo-600 text-white hover:bg-indigo-500"
+          class="border rounded-full p-5 mx-2 bg-indigo-600 text-white hover:bg-indigo-500"
         >
-          Send Message
+          <Icon icon="fluent:send-24-regular" />
         </button>
       </div>
       <label v-if="!joined" for="room" class="text-left my-3">Room</label>
       <div v-if="!joined" class="flex">
         <input
           type="text"
-          class="border rounded p-3 w-3/4 mx-2"
-          v-model="room"
+          class="border rounded p-3 w-full mx-2"
+          v-model="room.name"
           @keyup.enter="joinRoom"
         />
         <!-- <button type="submit" class="border rounded-full p-3 w-1/5 mx-2 bg-indigo-600 text-white hover:bg-indigo-500">Join</button> -->
       </div>
       <label v-if="!joined" for="username" class="text-left my-3"
-        >Username<span v-if="username">: {{ username }}</span></label
+        >Username<span v-if="user.name">: {{ user.name }}</span></label
       >
       <div v-if="!joined" class="flex">
         <input
           type="text"
-          class="border rounded p-3 w-3/4 mx-2"
-          v-model="username"
+          class="border rounded p-3 w-6/7 mx-2"
+          v-model="user.name"
           @keyup.enter="join()"
         />
         <button
           @click.prevent="join"
-          class="border rounded-full p-3 w-1/6 mx-2 bg-indigo-600 text-white hover:bg-indigo-500"
+          class="border rounded-full px-5 mx-2 bg-indigo-600 text-white hover:bg-indigo-500"
         >
           Join
         </button>
@@ -61,9 +61,10 @@
 
 <script setup>
 import { reactive, ref } from 'vue'
+import { Icon } from '@iconify/vue'
 
-const username = ref('')
-const message = ref('')
+const user = reactive({ name: '' })
+const message = reactive({ text: '' })
 const messages = reactive([
   {
     id: 1,
@@ -76,23 +77,21 @@ const messages = reactive([
     sender: 'Jane'
   }
 ])
-const room = ref('')
+const room = reactive({ name: '' })
 const joined = ref(false)
 
-const join = (username, room) => {
+const join = () => {
   joined.value = true
-  console.log('from join', username, room)
   // socket.emit('join', { username, room })
 }
 
-const sendMessage = (username, message) => {
+const sendMessage = () => {
   messages.push({
     id: Date.now(),
-    text: message.value,
-    sender: username.value
+    text: message.text,
+    sender: user.name
   })
-  console.log(message.value)
   // socket.emit('sendMessage', { message: message.value })
-  message.value = ''
+  message.text = ''
 }
 </script>
