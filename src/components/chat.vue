@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen">
     <h1 class="font-thin my-3 font-mono text-5xl">Chat App</h1>
-    <div v-if="messages" class="m-2 p-5 h-1/2 shadow-md overflow-y-scroll">
+    <div v-if="messages" class="m-2 p-5 h-1/2 shadow-md overflow-y-auto">
       <!-- <p>
         {{ message }}<span v-if="username"> - {{ username }}</span>
       </p> -->
@@ -65,18 +65,7 @@ import { io } from 'socket.io-client'
 
 const user = reactive({ name: '' })
 const message = reactive({ text: '' })
-const messages = reactive([
-  {
-    id: 1,
-    text: 'Hello',
-    sender: 'John'
-  },
-  {
-    id: 2,
-    text: 'Hi',
-    sender: 'Jane'
-  }
-])
+const messages = reactive([])
 const room = reactive({ name: '' })
 const joined = ref(false)
 
@@ -103,10 +92,11 @@ const addMessage = () => {
 
   messages.push(newMessage)
 
-  socketInstance.emit('message', newMessage)
+  socketInstance.emit('message', newMessage, room.name)
 }
 
 const sendMessage = () => {
+  if (message.text === '') return
   addMessage()
 
   message.text = ''
