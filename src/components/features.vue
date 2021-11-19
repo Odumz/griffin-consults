@@ -1,8 +1,8 @@
 <template>
   <div class="reveal fromTop py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-8 sm:px-20">
       <div class="lg:text-center">
-        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Simple . Smart . Trusted</h2>
+        <h2 class="text-base text-indigo-900 font-semibold tracking-wide uppercase">Simple . Smart . Trusted</h2>
         <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
           Meet, chat, and call in just one place
         </p>
@@ -19,7 +19,7 @@
             </div>
             <div v-else class="reveal">
               <dt class="flex">
-                <div class="absolute reveal fromLeft flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                <div class="absolute reveal fromLeft flex items-center justify-center h-12 w-12 rounded-md bg-indigo-900 text-white">
                   <Icon :icon="feature.icon" class="h-6 w-6" aria-hidden="true" />
                 </div>
                 <p class="ml-16 reveal fromRight text-lg leading-6 font-medium text-gray-900">{{ feature.name }}</p>

@@ -32,6 +32,7 @@ export default defineComponent({
 }
 
 #nav {
+  @apply px-52;
   padding: 30px;
 
   a {

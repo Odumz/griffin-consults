@@ -22,7 +22,7 @@
         />
         <button
           @click.prevent="sendMessage"
-          class="border rounded-full p-5 mx-2 bg-indigo-600 text-white hover:bg-indigo-500"
+          class="border rounded-full p-5 mx-2 bg-indigo-900 text-white hover:bg-indigo-500"
         >
           <Icon icon="fluent:send-24-regular" />
         </button>
@@ -35,7 +35,7 @@
           v-model="room.name"
           @keyup.enter="joinRoom"
         />
-        <!-- <button type="submit" class="border rounded-full p-3 w-1/5 mx-2 bg-indigo-600 text-white hover:bg-indigo-500">Join</button> -->
+        <!-- <button type="submit" class="border rounded-full p-3 w-1/5 mx-2 bg-indigo-900 text-white hover:bg-indigo-500">Join</button> -->
       </div>
       <label v-if="!joined" for="username" class="text-left my-3"
         >Username<span class="hidden" v-if="user.name">| {{ user.name }}</span></label
@@ -49,7 +49,7 @@
         />
         <button
           @click.prevent="join"
-          class="border rounded-full px-5 mx-2 bg-indigo-600 text-white hover:bg-indigo-500"
+          class="border rounded-full px-5 mx-2 bg-indigo-900 text-white hover:bg-indigo-500"
         >
           Join
         </button>
