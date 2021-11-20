@@ -176,9 +176,9 @@ const solutions = [
     icon: 'heroicons-outline:chat-alt-2'
   },
   {
-    name: 'Clicka Video Conference',
+    name: 'Clicka Conference',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '/clicka-video-conference',
+    href: '/clicka-conference',
     icon: 'heroicons-outline:video-camera'
   }
 ]

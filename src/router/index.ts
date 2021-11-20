@@ -41,6 +41,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "register" */ '../views/Register.vue')
   },
   {
+    path: '/clicka-conference',
+    name: 'Clicka Conference',
+    component: () => import(/* webpackChunkName: "videocall" */ '../views/VideoCall.vue')
+  },
+  {
+    path: '/schedule-conference',
+    name: 'Schedule Conference',
+    component: () => import(/* webpackChunkName: "schedule" */ '../views/Schedule.vue')
+  },
+  {
     path: '/chat-room',
     name: 'Chat',
     component: () => import(/* webpackChunkName: "chat" */ '../components/chat.vue')
