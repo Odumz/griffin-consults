@@ -10,8 +10,10 @@
   "dependencies": {
     "@headlessui/vue": "^1.4.1",
     "@tailwindcss/postcss7-compat": "^2.2.9",
+    "@vueup/vue-quill": "^1.0.0-beta.7",
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
+    "d3": "^7.1.1",
     "gsap": "^3.8.0",
     "postcss": "^7.0.36",
     "socket.io-client": "^4.3.2",

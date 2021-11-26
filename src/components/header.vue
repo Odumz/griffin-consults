@@ -1,7 +1,7 @@
 <template>
   <Popover class="relative bg-white">
-    <div class="max-w-7xl mx-auto px-8 sm:px-20">
-      <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between px-8 sm:px-20 items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 md:flex-1">
           <a href="/">
             <span class="sr-only">Workflow</span>
@@ -204,7 +204,7 @@ const resources = [
   {
     name: 'FAQ',
     description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
+    href: '/faq',
     icon: 'heroicons-outline:bookmark-alt'
   }
 ]
