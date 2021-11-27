@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
   },
   {
     path: '/about-clicka',
@@ -59,6 +59,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/chat-room',
     name: 'Chat',
     component: () => import(/* webpackChunkName: "chat" */ '../components/chat.vue')
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'Error',
+    component: () => import(/* webpackChunkName: "error" */ '../views/NotFound.vue')
   }
 ]
 
