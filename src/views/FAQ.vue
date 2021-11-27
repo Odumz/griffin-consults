@@ -59,6 +59,10 @@
   .content-text {
     @apply flex flex-col my-10 w-full;
   }
+
+  .floater {
+    @apply relative left-1/2;
+  }
 </style>
 
 <script lang="ts">

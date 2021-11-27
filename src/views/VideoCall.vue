@@ -1,5 +1,5 @@
 <template>
-  <div class="reveal md:flex pt-14 px-20 justify-around items-end shadow-lg pb-5">
+  <div class="reveal md:flex pt-14 px-20 justify-around items-end shadow-lg rounded pb-5">
     <div class="reveal fromLeft flex flex-col items-start">
       <h3 class="text-sm text-indigo-800">Clicka Conference</h3>
       <h1 class="text-3xl text-indigo-900 font-semibold">Big Title here</h1>
@@ -21,21 +21,25 @@
     <!-- notes & chat -->
     <div class="reveal fromLeft flex flex-col gap-2 lg:w-2/5">
       <!-- notes -->
-      <div class="reveal fromBottom md:w-full shadow-lg rounded">
+      <div class="reveal fromBottom md:w-full rounded">
         <h1 class="text-indigo-900 p-2 text-left">Notes</h1>
-        <div class="h-32">
+        <div class="h-32 shadow-lg rounded">
           <QuillEditor
-            class=" rounded-b"
+            class=""
+            contentType="html"
             theme="bubble"
             toolbar="full"
             v-model:content="notes"
             @ready="test"
             @text-change="newText"
+            placeholder="Type here..."
           />
         </div>
       </div>
       <!-- chat -->
-      <div v-if="chatOpen" class="reveal fromTop shadow-lg border-2 mt-2 px-4 py-6 rounded md:w-full h-52">ji</div>
+      <div v-if="chatOpen" class="reveal fromTop shadow-lg mt-2 px-4 py-6 rounded md:w-full h-52">
+        <h1 class="text-indigo-900 p-2 text-left">General Chat</h1>
+      </div>
     </div>
   </div>
   <!-- chat input -->
@@ -118,7 +122,7 @@ export default defineComponent({
       })
     }
 
-    const notes = ref('Hi brother!')
+    const notes = ref('')
 
     const getContent = () => {
       console.log('i am here')
