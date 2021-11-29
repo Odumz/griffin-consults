@@ -3,23 +3,25 @@
     <div class="bg-gray-50 px-8 sm:px-20">
       <div class="header reveal">
         <h1 class="text-7xl font-bold reveal fromLeft text-indigo-900">Blog</h1>
-        <p class="px-5 text-gray-500 text-left text-sm reveal fromRight w-1/3">
+        <p class="px-5 text-gray-500 text-left text-sm reveal fromRight sm:w-1/3">
           The most interesting experiences and updates as shared by the community.
         </p>
       </div>
       <div class="menu reveal fromBottom">
         <div class="categories">
-          <ul class="flex gap-6">
+          <ul class="sm:flex gap-6 text-left">
             <li>Editor's Choice 🌟</li>
             <li>Trending 📈</li>
             <li>Featured 😎</li>
           </ul>
         </div>
         <div class="filter">
-          <ul class="flex gap-6">
+          <ul class="hidden md:flex gap-6 text-right">
             <li>Filter</li>
             <li>Categories</li>
           </ul>
+          <!-- <Icon icon="eva:menu-outline" class="h-6 w-6" aria-hidden="true" /> -->
+          <Icon icon="bi:filter" class="h-6 w-6 md:hidden" aria-hidden="true" />
         </div>
       </div>
       <div class="divider reveal from Left"></div>
@@ -52,7 +54,7 @@
   }
 
   .menu {
-    @apply flex justify-between py-6;
+    @apply flex justify-between py-6 items-end;
   }
 </style>
 
@@ -60,11 +62,12 @@
 import { defineComponent, onMounted, ref } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Icon } from '@iconify/vue'
 import blogs from '@/components/blogs.vue'
 
 export default defineComponent({
   name: 'Blog',
-  components: { blogs },
+  components: { blogs, Icon },
   setup () {
     onMounted(() => {
       gsap.registerPlugin(ScrollTrigger)
