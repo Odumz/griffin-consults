@@ -10,7 +10,7 @@
       <div class="menu reveal fromBottom">
         <div class="categories">
           <ul class="flex gap-6">
-            <li class="text-indigo-800">Editor's Choice 🌟</li>
+            <li>Editor's Choice 🌟</li>
             <li>Trending 📈</li>
             <li>Featured 😎</li>
           </ul>
