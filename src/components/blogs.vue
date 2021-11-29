@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="sm:flex">
     <div class="main-blog">
       <div class="blog">
         <div class="post">
@@ -89,7 +89,7 @@ export default defineComponent({
 
 <style scoped>
   .main-blog {
-    @apply flex w-8/9;
+    @apply flex sm:w-8/9;
   }
 
   .blog {
@@ -121,6 +121,6 @@ export default defineComponent({
   }
 
   .control {
-    @apply flex justify-center items-center text-indigo-900 p-3 w-1/9;
+    @apply flex justify-center items-center text-indigo-900 p-3 sm:w-1/9;
   }
 </style>
