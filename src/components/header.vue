@@ -1,7 +1,7 @@
 <template>
   <Popover class="relative bg-white">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex justify-between px-8 sm:px-20 items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+    <div class="px-8 sm:px-20 mx-auto">
+      <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 md:flex-1">
           <a href="/">
             <span class="sr-only">Workflow</span>
@@ -90,7 +90,7 @@
                       </ul>
                     </div>
                     <div class="mt-5 text-right text-sm">
-                      <a href="#" class="font-medium text-indigo-900 hover:text-indigo-500"> View all posts <span aria-hidden="true">&rarr;</span></a>
+                      <a href="/blog" class="font-medium text-indigo-900 hover:text-indigo-500"> View all posts <span aria-hidden="true">&rarr;</span></a>
                     </div>
                   </div>
                 </div>
@@ -185,12 +185,12 @@ const solutions = [
 const callsToAction = [
   {
     name: 'Watch Demo',
-    href: '#',
+    href: 'https://www.youtube.com/channel/UC2HLQq3pl8VgOdL1_SGZVhQ',
     icon: 'ci:play-circle-outline'
   },
   {
     name: 'Contact Sales',
-    href: '#',
+    href: '/sales',
     icon: 'carbon:phone'
   }
 ]
@@ -198,7 +198,7 @@ const resources = [
   {
     name: 'Help Center',
     description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
+    href: '/help-center',
     icon: 'gg:support'
   },
   {

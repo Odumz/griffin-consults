@@ -46,8 +46,8 @@
   <div v-if="chatOpen">
     <div class="reveal items-center md:shadow-lg justify-center pb-6 md:py-0">
       <div class="flex flex-col gap-y-2 mx-8 sm:mx-20 rounded-lg overflow-hidden sm:flex-row pb-10">
-        <input class="rounded-lg py-2 sm:w-11/12 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100" type="text" name="message" placeholder="type here ...">
-        <button class="py-2 px-4 rounded-lg bg-indigo-900 lg:rounded-tr-lg text-gray-100 font-semibold uppercase hover:bg-gray-600">Send</button>
+        <input v-model="chat" @keyup.enter="sendChat" class="rounded-lg py-2 sm:w-11/12 px-4 bg-gray-200 text-gray-800 border-gray-300 border-2 outline-none placeholder-gray-500 focus:bg-gray-100" type="text" name="message" placeholder="type here ...">
+        <button @click.prevent="sendChat" class="py-2 px-4 rounded-lg bg-indigo-900 lg:rounded-tr-lg text-gray-100 font-semibold uppercase hover:bg-gray-600">Send</button>
       </div>
     </div>
   </div>
@@ -132,7 +132,7 @@ export default defineComponent({
 
     const test = () => {
       console.log('hi')
-      // console.log(notes)
+      console.log('new notes', notes.value)
     }
 
     const chatOpen = ref(true)
@@ -141,8 +141,14 @@ export default defineComponent({
       console.log('new notes here', notes.value)
     }
 
+    const chat = ref('')
+
+    const sendChat = () => {
+      console.log('chat is ', chat.value)
+    }
+
     return {
-      test, notes, newText, chatOpen
+      test, notes, newText, chatOpen, chat, sendChat
     }
   }
 })
