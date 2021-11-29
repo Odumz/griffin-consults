@@ -113,7 +113,7 @@ export default defineComponent({
   }
 
   .share {
-    @apply flex justify-between w-1/4 lg:w-1/2 text-lg;
+    @apply flex justify-between w-1/4 lg:w-1/2 2xl:w-1/4 text-lg;
   }
 
   .date {
